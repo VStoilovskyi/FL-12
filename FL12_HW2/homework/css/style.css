@@ -1,0 +1,229 @@
+
+.tm-nav-item :hover{
+    background-color: lightblue;
+    color: #fff;
+}
+.tm-content-box, .tm-main-nav{
+  box-shadow: 0 0 10px rgba(61, 55, 61, 0.7);
+}
+
+.tm-banner{
+    background: linear-gradient(90deg, lightskyblue, burlywood );
+    box-shadow: rgba(61, 55, 61, 0.7);
+}
+
+.tm-banner-inner{
+    background-color: white;
+}
+
+
+.tm-banner-text{
+    text-shadow: 5px 5px 3px #333 ;
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+      margin-left: 200px;
+    }
+  
+    to {
+      margin-left: 0;
+    }
+  }
+
+.flex-2-col{
+  display: flex;
+}
+.flex-item.tm-team-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.tm-team-description-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.tm-team-description-container h2,p{
+  text-align: center;
+}
+
+.boxes.gallery-container li :hover{
+  background-color: lightgray;
+  color: lightskyblue;
+}
+.padding-medium h2{
+  color: lightskyblue;
+  text-align: center;
+}
+
+.padding-medium ol{
+  list-style: lower-alpha;
+}
+.padding-medium li:hover:before{
+  content:'> ';
+}
+
+.text:after {
+  content: "New";
+  color: red;
+  font-size: 10px;
+  font-weight: bold;
+  vertical-align: super;
+}
+
+.blocks div.padding-medium.flex-item.tm-team-description-container p:last-child{
+  letter-spacing: 5px;
+  word-spacing: 10px;
+}
+
+
+.blocks div.padding-medium.flex-item.tm-team-description-container p{
+  text-align: left;
+}
+.blocks div.padding-medium.flex-item.tm-team-description-container{
+  justify-content: left;
+}
+
+.blocks li:nth-child(odd) {
+  background-color: lightskyblue;
+  color: white;
+}
+
+.boxes.gallery-container li{
+  padding: 10px;
+}
+
+.box.box-work p{
+  text-align: left;
+}
+
+.box.box-work p::first-letter{
+  font-weight: bold;
+}
+
+.tm-section-description p{
+  white-space: 25px;
+  line-height: 30px;
+}
+
+#contact h2{
+  text-align: left;
+}
+
+input[type=text],input[type=email] {
+  border: none;
+  border-bottom: 1px lightskyblue solid;
+}
+
+.form-control:focus {
+  background-color: lightskyblue;
+}
+
+#contact_message {
+  border: 1px lightskyblue solid;
+  background: url(../img/email-icon.png) no-repeat;
+  background-position: right 10px bottom 10px;
+  background-size: 30px auto;
+}
+
+.form-control:focus{
+  box-shadow: none;
+}
+
+.btn{
+  float: right;
+  height: 50px;
+  width: 100px;
+  border-color: rgb(135, 206, 250);
+  background-color: white;
+  color: rgb(135, 206, 250);
+} 
+
+@media print{
+body{
+  background: none;
+}  
+.tm-sidebar {
+  display: none
+}
+.tm-content-box{
+  justify-content: center;
+}
+.flex-item.tm-team-img{
+  display: none;
+}
+#about{
+  display: none;
+}
+.boxes.gallery-container{
+  display: none;
+}
+.carousel-indicators{
+  display:none
+}
+.img-fluid.img-contact-us{
+  display: none;
+}
+#contact{
+  display: none;
+}
+.tm-main-content{
+  padding-top: 0;
+  align-content: center;
+  justify-content: center;
+}
+.tm-content-box{
+  margin-bottom: 0;
+  margin-top:0;
+}
+
+.tm-team-description-container {
+    max-width: 100%;
+    text-align: center;
+}
+
+p{
+  text-align: center;
+}
+
+.padding-medium, .carousel{
+  padding:0
+}
+h2,h3{
+  text-align: center;
+  color: lightsteelblue !important;
+  text-transform: uppercase;
+  font-weight: 500 !important;
+}
+
+.tm-banner{
+  padding:0 0 10px 0;
+  background: none;
+}
+.text:after{
+  display: none;
+}
+.tm-content-box ol li:nth-child(odd) {
+  margin-right: 200px;
+  text-align: right;
+}
+.tm-content-box ol li:nth-child(even) {
+  margin-left: 150px;
+  text-align: left;
+}
+.padding-medium ol{
+  list-style: none
+}
+
+.blocks div.padding-medium.flex-item.tm-team-description-container{
+  justify-content: center;
+}
+.blocks div.padding-medium.flex-item.tm-team-description-container p{
+  text-align: center;
+}
+
+
+}
