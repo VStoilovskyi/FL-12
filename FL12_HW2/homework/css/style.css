@@ -106,7 +106,7 @@
 }
 
 .tm-section-description p{
-  white-space: 25px;
+  white-space: pre-wrap;
   line-height: 30px;
 }
 
